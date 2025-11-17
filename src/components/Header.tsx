@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuItems = [{
     label: 'Products',
-    href: '#products'
+    href: '/products'
   }, {
     label: 'How It Works',
     href: '#how-it-works'
   }, {
     label: 'About',
-    href: '#about'
+    href: '/about'
   }, {
     label: 'Contact',
     href: '#contact'
@@ -20,7 +21,7 @@ export function Header() {
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2">
               <img src="https://drive.google.com/uc?export=view&id=1kDpF38PwkEhI8M7ZxGSxf051Y-2vs1Yb" alt="Reazent Logo" className="w-10 h-10 object-contain" onError={e => {
               e.currentTarget.style.display = 'none';
               e.currentTarget.nextElementSibling?.classList.remove('hidden');
@@ -31,14 +32,19 @@ export function Header() {
               <span className="text-xl md:text-2xl font-bold text-purple-950">
                 Reazent
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            {menuItems.map(item => <a key={item.label} href={item.href} className="text-purple-900 hover:text-orange-500 transition-colors font-medium">
-                {item.label}
-              </a>)}
+            {menuItems.map(item => {
+            const isRoute = item.href.startsWith('/');
+            return isRoute ? <Link key={item.label} to={item.href} className="text-purple-900 hover:text-orange-500 transition-colors font-medium">
+                  {item.label}
+                </Link> : <a key={item.label} href={item.href} className="text-purple-900 hover:text-orange-500 transition-colors font-medium">
+                  {item.label}
+                </a>;
+          })}
             <button className="bg-orange-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
               Get Started
             </button>
@@ -53,9 +59,14 @@ export function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && <div className="md:hidden py-4 border-t border-purple-100">
             <nav className="flex flex-col gap-4">
-              {menuItems.map(item => <a key={item.label} href={item.href} className="text-purple-900 hover:text-orange-500 transition-colors font-medium py-2" onClick={() => setIsMenuOpen(false)}>
-                  {item.label}
-                </a>)}
+              {menuItems.map(item => {
+            const isRoute = item.href.startsWith('/');
+            return isRoute ? <Link key={item.label} to={item.href} className="text-purple-900 hover:text-orange-500 transition-colors font-medium py-2" onClick={() => setIsMenuOpen(false)}>
+                    {item.label}
+                  </Link> : <a key={item.label} href={item.href} className="text-purple-900 hover:text-orange-500 transition-colors font-medium py-2" onClick={() => setIsMenuOpen(false)}>
+                    {item.label}
+                  </a>;
+          })}
               <button className="bg-orange-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-orange-600 transition-colors mt-2">
                 Get Started
               </button>
