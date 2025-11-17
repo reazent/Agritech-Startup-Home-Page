@@ -2,47 +2,54 @@ import React from 'react';
 import { Linkedin } from 'lucide-react';
 export function TeamSection() {
   const team = [{
-    name: 'Dr. Sarah Chen',
-    role: 'CEO & Co-Founder',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
-    bio: 'PhD in Agricultural Biochemistry, 15+ years in sustainable farming research.'
+    name: 'Sumit Verma',
+    role: 'Co-Founder',
+    image: "/team.jpg",
+    expertise: ['Chemical Technology', 'Business Development', 'Product Development'],
+    bio: 'Expert in chemical technology with extensive experience in business and product development.'
   }, {
-    name: 'Michael Rodriguez',
-    role: 'CTO & Co-Founder',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
-    bio: 'Former lead scientist at AgriTech Labs, expert in bio-fertilizer development.'
-  }, {
-    name: 'Emily Thompson',
-    role: 'Head of Research',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
-    bio: 'Agronomist with field experience across 20+ crop types and climates.'
-  }, {
-    name: 'James Patterson',
-    role: 'VP of Operations',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop',
-    bio: 'Supply chain expert ensuring quality from lab to field.'
+    name: 'David Warner',
+    role: 'Co-Founder',
+    image: "/team.jpg",
+    expertise: ['Ag Biologicals', 'Go to Market', 'Commercialization'],
+    bio: 'Agricultural biologicals specialist with proven track record in commercialization and market strategy.'
   }];
   return <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-purple-950 mb-4">
-            Meet Our Team
+            Meet Our Founders
           </h2>
           <p className="text-lg text-purple-900 max-w-2xl mx-auto">
-            Passionate experts dedicated to transforming agriculture
+            Founding and advisory team with expertise in farming, R&D and
+            commercialization
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {team.map((member, index) => <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <img src={member.image} alt={member.name} className="w-full h-64 object-cover" />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-purple-950 mb-1">
+              <div className="h-80 bg-gradient-to-br from-purple-100 to-orange-50 flex items-center justify-center">
+                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                  <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                </div>
+              </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-purple-950 mb-1">
                   {member.name}
                 </h3>
-                <p className="text-orange-500 font-semibold mb-3">
+                <p className="text-orange-500 font-semibold mb-4 text-lg">
                   {member.role}
                 </p>
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-purple-950 mb-2">
+                    Expertise:
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {member.expertise.map((skill, idx) => <span key={idx} className="px-3 py-1 bg-purple-100 text-purple-900 rounded-full text-sm font-medium">
+                        {skill}
+                      </span>)}
+                  </div>
+                </div>
                 <p className="text-sm text-purple-900 mb-4">{member.bio}</p>
                 <button className="text-purple-600 hover:text-purple-800 transition-colors">
                   <Linkedin className="w-5 h-5" />

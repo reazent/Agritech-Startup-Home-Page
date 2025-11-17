@@ -7,14 +7,14 @@ export function Header() {
     label: 'Products',
     href: '/products'
   }, {
-    label: 'How It Works',
-    href: '#how-it-works'
+    label: 'Technology',
+    href: '/technology'
   }, {
     label: 'About',
     href: '/about'
   }, {
     label: 'Contact',
-    href: '#contact'
+    href: '/contact'
   }];
   return <header className="sticky top-0 z-50 bg-white border-b border-purple-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
