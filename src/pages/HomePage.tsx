@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { StatsSection } from '../components/StatsSection';
+import { PosterHighlightsSection } from '../components/PosterHighlightsSection';
 import { ValuePropsSection } from '../components/ValuePropsSection';
 import { HowItWorksSection } from '../components/HowItWorksSection';
 import { CTASection } from '../components/CTASection';
@@ -11,6 +12,7 @@ export function HomePage() {
       <Header />
       <Hero />
       <StatsSection />
+      <PosterHighlightsSection />
       <ValuePropsSection />
       <HowItWorksSection />
       <CTASection />
