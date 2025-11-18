@@ -23,24 +23,6 @@ export function NewsPage() {
     title: 'Prodigy Receives OMRI Listing',
     excerpt: "Reazent's Prodigy seed treatment has been approved by the Organic Materials Review Institute (OMRI), making it available for organic soybean production.",
     image: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=500&fit=crop'
-  }, {
-    date: 'October 20, 2024',
-    category: 'Partnership',
-    title: 'Expanding Distribution Network',
-    excerpt: 'Reazent announces partnerships with leading agricultural distributors to expand product availability and farmer support services.',
-    image: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=500&fit=crop'
-  }, {
-    date: 'September 15, 2024',
-    category: 'Company',
-    title: 'Reazent Secures Series A Funding',
-    excerpt: 'Investment will accelerate product development pipeline and expand field testing programs across North America.',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop'
-  }, {
-    date: 'August 1, 2024',
-    category: 'Research',
-    title: 'New Product Pipeline Advances',
-    excerpt: 'Multiple products including Ignite, Migrow X, and Neo progress to field testing phase with promising early results.',
-    image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=500&fit=crop'
   }];
   const categoryColors: Record<string, string> = {
     'Product Launch': 'bg-green-100 text-green-800',
@@ -103,14 +85,14 @@ export function NewsPage() {
         </div>
       </section>
 
-      {/* All News */}
+      {/* Recent Updates - Only Field Trials and OMRI Listing */}
       <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-purple-950 mb-12 text-center">
             Recent Updates
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {newsItems.slice(1).map((item, index) => <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative h-48">
                   <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
