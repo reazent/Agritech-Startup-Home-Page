@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Droplet, Package, Sprout } from 'lucide-react';
+import { Link } from 'react-router-dom';
 interface ProductCardProps {
   name: string;
   description: string;
@@ -10,6 +11,7 @@ interface ProductCardProps {
   availability: string;
   image: string;
   stage: 'commercial' | 'field-testing' | 'development' | 'research';
+  slug: string;
 }
 export function ProductCard({
   name,
@@ -20,7 +22,8 @@ export function ProductCard({
   application,
   availability,
   image,
-  stage
+  stage,
+  slug
 }: ProductCardProps) {
   const stageConfig = {
     commercial: {
@@ -86,10 +89,12 @@ export function ProductCard({
           </div>
         </div>
 
-        <button className="w-full bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center gap-2">
-          Learn More
-          <ArrowRight className="w-4 h-4" />
-        </button>
+        <Link to={`/products/${slug}`}>
+          <button className="w-full bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center gap-2">
+            Learn More
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        </Link>
       </div>
     </div>;
 }

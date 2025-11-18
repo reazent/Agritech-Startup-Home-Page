@@ -4,6 +4,8 @@ import { Footer } from '../components/Footer';
 import { CTASection } from '../components/CTASection';
 import { Leaf, FlaskConical, Microscope, Users, Target, Lightbulb } from 'lucide-react';
 export function TechnologyPage() {
+  // Replace this URL with your own hero image
+  const heroImage = 'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1600&h=800&fit=crop';
   const pillars = [{
     icon: Leaf,
     title: 'Nature-Based Solutions',
@@ -44,17 +46,21 @@ export function TechnologyPage() {
   return <div className="w-full min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-900 to-purple-950 py-20 sm:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Our Technology
-          </h1>
-          <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">
-            Where nature meets innovation. We combine the wisdom of natural
-            systems with cutting-edge green chemistry and biotechnology to
-            create sustainable agricultural solutions.
-          </p>
+      {/* Hero Section with Image and Overlay Text */}
+      <section className="relative h-[500px] overflow-hidden">
+        <img src={heroImage} alt="Our Technology" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-purple-950/80"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Our Technology
+            </h1>
+            <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">
+              Where nature meets innovation. We combine the wisdom of natural
+              systems with cutting-edge green chemistry and biotechnology to
+              create sustainable agricultural solutions.
+            </p>
+          </div>
         </div>
       </section>
 

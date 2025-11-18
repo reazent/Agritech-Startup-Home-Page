@@ -45,9 +45,6 @@ export function Header() {
                   {item.label}
                 </a>;
           })}
-            <button className="bg-orange-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
-              Get Started
-            </button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -67,9 +64,6 @@ export function Header() {
                     {item.label}
                   </a>;
           })}
-              <button className="bg-orange-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-orange-600 transition-colors mt-2">
-                Get Started
-              </button>
             </nav>
           </div>}
       </div>

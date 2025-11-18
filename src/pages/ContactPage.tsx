@@ -3,6 +3,8 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 export function ContactPage() {
+  // Replace this URL with your own hero image
+  const heroImage = 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&h=800&fit=crop';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -40,16 +42,20 @@ export function ContactPage() {
   return <div className="w-full min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-900 to-purple-950 py-20 sm:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Get In Touch
-          </h1>
-          <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">
-            Have questions about our products? Want to partner with us? We'd
-            love to hear from you.
-          </p>
+      {/* Hero Section with Image and Overlay Text */}
+      <section className="relative h-[500px] overflow-hidden">
+        <img src={heroImage} alt="Contact Us" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-purple-950/80"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Get In Touch
+            </h1>
+            <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">
+              Have questions about our products? Want to partner with us? We'd
+              love to hear from you.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -62,7 +68,7 @@ export function ContactPage() {
               <h2 className="text-3xl font-bold text-purple-950 mb-6">
                 Contact Information
               </h2>
-              <p className="text-purple-900 mb-8">
+              <p className="text-xl text-purple-900 mb-8">
                 Reach out to our team and we'll get back to you within 24 hours.
               </p>
 
@@ -86,17 +92,6 @@ export function ContactPage() {
                       {content}
                     </a> : <div key={index}>{content}</div>;
               })}
-              </div>
-
-              {/* Office Hours */}
-              <div className="mt-8 bg-white rounded-xl p-6 shadow-lg">
-                <h3 className="text-lg font-semibold text-purple-950 mb-3">
-                  Office Hours
-                </h3>
-                <div className="space-y-2 text-purple-900">
-                  <p>Monday - Friday: 9:00 AM - 5:00 PM AST</p>
-                  <p>Saturday - Sunday: Closed</p>
-                </div>
               </div>
             </div>
 

@@ -47,16 +47,6 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="hover:text-orange-300 transition-colors">
-                  Research
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-orange-300 transition-colors">
-                  Certifications
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-orange-300 transition-colors">
                   Careers
                 </a>
               </li>

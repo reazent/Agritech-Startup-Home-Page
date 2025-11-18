@@ -10,17 +10,13 @@ export function Hero() {
               <br />
               <span className="text-orange-500">Higher Yields.</span>
             </h1>
-            <p className="text-lg sm:text-xl text-purple-900 mb-8 max-w-2xl mx-auto lg:mx-0 font-medium">
+            <p className="text-xl text-purple-900 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               Revolutionary agricultural inputs that increase crop productivity
               while protecting the environment. Proven results for modern
               farmers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors flex items-center justify-center gap-2">
-                Request Demo
-                <ArrowRight className="w-5 h-5" />
-              </button>
-              <button className="bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+              <button className="bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-colors text-lg">
                 Learn More
               </button>
             </div>

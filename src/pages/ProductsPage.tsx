@@ -4,6 +4,8 @@ import { Footer } from '../components/Footer';
 import { ProductCard } from '../components/ProductCard';
 import { CTASection } from '../components/CTASection';
 export function ProductsPage() {
+  // Replace this URL with your own hero image
+  const heroImage = 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&h=800&fit=crop';
   const products = [{
     name: 'Prodigy',
     description: 'A proprietary formulation of microbes (apr1), a natural compound, and plant biomass',
@@ -13,7 +15,8 @@ export function ProductsPage() {
     application: 'Seed treatment',
     availability: '2024',
     stage: 'commercial' as const,
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
+    slug: 'prodigy'
   }, {
     name: 'Ignite',
     description: 'A natural compound for enhanced crop performance',
@@ -23,7 +26,8 @@ export function ProductsPage() {
     application: 'Soil amendment',
     availability: '2026',
     stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
+    slug: 'ignite'
   }, {
     name: 'Migrow X',
     description: 'A proprietary formulation of microbes (apr4), and a natural compound',
@@ -33,7 +37,8 @@ export function ProductsPage() {
     application: 'Nutrient',
     availability: '2026',
     stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&h=400&fit=crop',
+    slug: 'migrow-x'
   }, {
     name: 'Neo',
     description: 'A proprietary formulation of microbes (apr1), and a natural compound',
@@ -43,7 +48,8 @@ export function ProductsPage() {
     application: 'Foliar biocontrol',
     availability: '2026',
     stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
+    slug: 'neo'
   }, {
     name: 'Spark',
     description: 'A proprietary formulation of plant biomass',
@@ -53,7 +59,8 @@ export function ProductsPage() {
     application: 'Soil amendment',
     availability: '2026',
     stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
+    slug: 'spark'
   }, {
     name: 'Rise',
     description: 'Rhizobia, bradyrhizobium Japonicum for nitrogen fixation',
@@ -63,7 +70,8 @@ export function ProductsPage() {
     application: 'Seed treatment',
     availability: '2026',
     stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
+    slug: 'rise'
   }, {
     name: 'Prodigy Plus',
     description: 'Prodigy with Rise - combined formulation for enhanced results',
@@ -73,7 +81,8 @@ export function ProductsPage() {
     application: 'Seed treatment',
     availability: '2026',
     stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
+    slug: 'prodigy-plus'
   }, {
     name: 'Thrive',
     description: 'A proprietary formulation of microbes, a natural compound, plant biomass, and inorganic mineral',
@@ -83,7 +92,8 @@ export function ProductsPage() {
     application: 'Soil amendment',
     availability: '2026',
     stage: 'development' as const,
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
+    slug: 'thrive'
   }, {
     name: 'Zenith',
     description: 'A formulation of microbe (apr1), a natural compound, plant biomass, and inorganic mineral',
@@ -93,7 +103,8 @@ export function ProductsPage() {
     application: 'Soil amendment',
     availability: '2026',
     stage: 'development' as const,
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
+    slug: 'zenith'
   }, {
     name: 'Apex',
     description: 'A proprietary formulation for nitrogen fixation in corn',
@@ -103,21 +114,26 @@ export function ProductsPage() {
     application: 'Soil amendment',
     availability: '2027',
     stage: 'research' as const,
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop'
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
+    slug: 'apex'
   }];
   return <div className="w-full min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-900 to-purple-950 py-20 sm:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Our Products
-          </h1>
-          <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">
-            Innovative agricultural inputs designed to boost yields, improve
-            soil health, and support sustainable farming practices.
-          </p>
+      {/* Hero Section with Image and Overlay Text */}
+      <section className="relative h-[500px] overflow-hidden">
+        <img src={heroImage} alt="Our Products" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-purple-950/80"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Our Products
+            </h1>
+            <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">
+              Innovative agricultural inputs designed to boost yields, improve
+              soil health, and support sustainable farming practices.
+            </p>
+          </div>
         </div>
       </section>
 

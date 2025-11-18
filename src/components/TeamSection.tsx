@@ -4,55 +4,65 @@ export function TeamSection() {
   const team = [{
     name: 'Sumit Verma',
     role: 'Co-Founder',
-    image: "/team.jpg",
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
     expertise: ['Chemical Technology', 'Business Development', 'Product Development'],
     bio: 'Expert in chemical technology with extensive experience in business and product development.'
   }, {
     name: 'David Warner',
     role: 'Co-Founder',
-    image: "/team.jpg",
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
     expertise: ['Ag Biologicals', 'Go to Market', 'Commercialization'],
     bio: 'Agricultural biologicals specialist with proven track record in commercialization and market strategy.'
   }];
-  return <section className="py-20 bg-white">
+  return <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-purple-950 mb-4">
+          <h2 className="text-4xl font-bold text-purple-950 mb-4">
             Meet Our Founders
           </h2>
-          <p className="text-lg text-purple-900 max-w-2xl mx-auto">
+          <p className="text-xl text-purple-900 max-w-3xl mx-auto">
             Founding and advisory team with expertise in farming, R&D and
             commercialization
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          {team.map((member, index) => <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-80 bg-gradient-to-br from-purple-100 to-orange-50 flex items-center justify-center">
-                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          {team.map((member, index) => <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+              {/* Headshot Section */}
+              <div className="relative h-96 bg-gradient-to-br from-purple-100 to-orange-50">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-72 h-72 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                    <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                  </div>
                 </div>
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-purple-950 mb-1">
+
+              {/* Info Section */}
+              <div className="p-8 text-center">
+                <h3 className="text-3xl font-bold text-purple-950 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-orange-500 font-semibold mb-4 text-lg">
+                <p className="text-xl text-orange-500 font-semibold mb-6">
                   {member.role}
                 </p>
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-purple-950 mb-2">
-                    Expertise:
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {member.expertise.map((skill, idx) => <span key={idx} className="px-3 py-1 bg-purple-100 text-purple-900 rounded-full text-sm font-medium">
+
+                {/* Expertise Tags */}
+                <div className="mb-6">
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {member.expertise.map((skill, idx) => <span key={idx} className="px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold">
                         {skill}
                       </span>)}
                   </div>
                 </div>
-                <p className="text-sm text-purple-900 mb-4">{member.bio}</p>
-                <button className="text-purple-600 hover:text-purple-800 transition-colors">
-                  <Linkedin className="w-5 h-5" />
+
+                {/* Bio */}
+                <p className="text-base text-purple-900 leading-relaxed mb-6">
+                  {member.bio}
+                </p>
+
+                {/* LinkedIn */}
+                <button className="inline-flex items-center justify-center w-12 h-12 bg-purple-100 hover:bg-purple-200 rounded-full transition-colors">
+                  <Linkedin className="w-6 h-6 text-purple-600" />
                 </button>
               </div>
             </div>)}
