@@ -10,8 +10,8 @@ export function Header() {
     label: 'Technology',
     href: '/technology'
   }, {
-    label: 'About',
-    href: '/about'
+    label: 'About Us',
+    href: '/about us'
   }, {
     label: 'Contact',
     href: '/contact'
