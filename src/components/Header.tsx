@@ -7,8 +7,8 @@ export function Header() {
     label: 'Products',
     href: '/products'
   }, {
-    label: 'Technology',
-    href: '/technology'
+    label: 'Technology and',
+    href: '/technology and'
   }, {
     label: 'About',
     href: '/about'
