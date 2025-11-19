@@ -4,13 +4,15 @@ export function TeamSection() {
   const team = [{
     name: 'Sumit Verma',
     role: 'Co-Founder',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+    image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1763581526/sumit%20verma%20photoshot.png',
+    linkedinUrl: 'https://www.linkedin.com/in/sumitverma',
     expertise: ['Chemical Technology', 'Business Development', 'Product Development'],
     bio: 'Expert in chemical technology with extensive experience in business and product development.'
   }, {
     name: 'David Warner',
     role: 'Co-Founder',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
+    image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1763583138/dave_warner_headshot_z0swts.png',
+    linkedinUrl: 'https://www.linkedin.com/in/davidwarner',
     expertise: ['Ag Biologicals', 'Go to Market', 'Commercialization'],
     bio: 'Agricultural biologicals specialist with proven track record in commercialization and market strategy.'
   }];
@@ -31,9 +33,9 @@ export function TeamSection() {
               {/* Headshot Section */}
               <div className="relative h-96 bg-gradient-to-br from-purple-100 to-orange-50">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-72 h-72 rounded-full overflow-hidden border-8 border-white shadow-2xl">
-                    <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
-                  </div>
+                  <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" className="w-72 h-72 rounded-full overflow-hidden border-8 border-white shadow-2xl hover:border-purple-200 transition-all duration-300 block">
+                    <img src={member.image} alt={member.name} className="w-full h-full object-contain" />
+                  </a>
                 </div>
               </div>
 
@@ -61,9 +63,9 @@ export function TeamSection() {
                 </p>
 
                 {/* LinkedIn */}
-                <button className="inline-flex items-center justify-center w-12 h-12 bg-purple-100 hover:bg-purple-200 rounded-full transition-colors">
+                <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-12 h-12 bg-purple-100 hover:bg-purple-200 rounded-full transition-colors" aria-label={`${member.name}'s LinkedIn profile`}>
                   <Linkedin className="w-6 h-6 text-purple-600" />
-                </button>
+                </a>
               </div>
             </div>)}
         </div>
