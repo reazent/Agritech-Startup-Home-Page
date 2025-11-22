@@ -53,7 +53,7 @@ export function ProductCard({
   };
   const currentStage = stageConfig[stage];
   return <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-      <div className="relative h-48 bg-gradient-to-br from-purple-100 to-orange-50 overflow-hidden">
+      <div className="relative h-48 bg-gradient-to-br from-orange-100 to-orange-50 overflow-hidden">
         <img src={image} alt={name} className="w-full h-full object-cover" />
         <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
           {availability}

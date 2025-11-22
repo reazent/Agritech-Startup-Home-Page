@@ -15,7 +15,7 @@ export function AboutPage() {
       {/* Hero Section with Image and Overlay Text */}
       <section className="relative h-[500px] overflow-hidden">
         <img src={heroImage} alt="About Reazent" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-purple-950/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-800/80 to-orange-900/80"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">

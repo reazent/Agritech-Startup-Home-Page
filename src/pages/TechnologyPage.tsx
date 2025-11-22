@@ -49,7 +49,7 @@ export function TechnologyPage() {
       {/* Hero Section with Image and Overlay Text */}
       <section className="relative h-[500px] overflow-hidden">
         <img src={heroImage} alt="Our Technology" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-purple-950/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-800/80 to-orange-900/80"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -100,7 +100,7 @@ export function TechnologyPage() {
       </section>
 
       {/* Three Pillars Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-purple-950 mb-4">
@@ -115,7 +115,7 @@ export function TechnologyPage() {
             {pillars.map((pillar, index) => {
             const Icon = pillar.icon;
             return <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-purple-950 mb-4">
@@ -207,7 +207,7 @@ export function TechnologyPage() {
       </section>
 
       {/* Development Process */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-purple-950 mb-4">

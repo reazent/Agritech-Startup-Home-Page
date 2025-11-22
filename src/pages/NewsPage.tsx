@@ -37,7 +37,7 @@ export function NewsPage() {
       {/* Hero Section with Image and Overlay Text */}
       <section className="relative h-[500px] overflow-hidden">
         <img src={heroImage} alt="News & Updates" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-purple-950/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-800/80 to-orange-900/80"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -54,7 +54,7 @@ export function NewsPage() {
       {/* Featured News */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-2xl overflow-hidden shadow-xl">
+          <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl overflow-hidden shadow-xl">
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="relative h-96 lg:h-auto">
                 <img src={newsItems[0].image} alt={newsItems[0].title} className="w-full h-full object-cover" />
@@ -85,8 +85,8 @@ export function NewsPage() {
         </div>
       </section>
 
-      {/* Recent Updates - Only Field Trials and OMRI Listing */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+      {/* Recent Updates */}
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-purple-950 mb-12 text-center">
             Recent Updates
@@ -124,7 +124,7 @@ export function NewsPage() {
       {/* Newsletter Signup */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-12 text-center text-white shadow-xl">
+          <div className="bg-gradient-to-br from-orange-600 to-orange-800 rounded-2xl p-12 text-center text-white shadow-xl">
             <h2 className="text-4xl font-bold mb-4">Stay Updated</h2>
             <p className="text-xl mb-8 opacity-90">
               Subscribe to our newsletter for the latest news, product updates,

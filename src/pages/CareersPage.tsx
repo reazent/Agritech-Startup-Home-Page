@@ -53,7 +53,7 @@ export function CareersPage() {
       {/* Hero Section with Image and Overlay Text */}
       <section className="relative h-[500px] overflow-hidden">
         <img src={heroImage} alt="Careers at Reazent" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-purple-950/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-800/80 to-orange-900/80"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -84,8 +84,8 @@ export function CareersPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => {
             const Icon = value.icon;
-            return <div key={index} className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-xl p-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            return <div key={index} className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-purple-950 mb-2">
@@ -99,7 +99,7 @@ export function CareersPage() {
       </section>
 
       {/* Open Positions */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-purple-950 mb-4">
@@ -139,7 +139,7 @@ export function CareersPage() {
       {/* How to Apply */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-12 text-center text-white shadow-xl">
+          <div className="bg-gradient-to-br from-orange-600 to-orange-800 rounded-2xl p-12 text-center text-white shadow-xl">
             <Briefcase className="w-16 h-16 mx-auto mb-6" />
             <h2 className="text-4xl font-bold mb-4">Ready to Apply?</h2>
             <p className="text-xl mb-8 opacity-90">

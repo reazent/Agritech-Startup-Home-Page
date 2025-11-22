@@ -16,7 +16,7 @@ export function TeamSection() {
     expertise: ['Ag Biologicals', 'Go to Market', 'Commercialization'],
     bio: 'Agricultural biologicals specialist with proven track record in commercialization and market strategy.'
   }];
-  return <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+  return <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-purple-950 mb-4">
@@ -31,7 +31,7 @@ export function TeamSection() {
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {team.map((member, index) => <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
               {/* Headshot Section */}
-              <div className="relative h-96 bg-gradient-to-br from-purple-100 to-orange-50">
+              <div className="relative h-96 bg-gradient-to-br from-orange-100 to-orange-50">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" className="w-72 h-72 rounded-full overflow-hidden border-8 border-white shadow-2xl hover:border-purple-200 transition-all duration-300 block">
                     <img src={member.image} alt={member.name} className="w-full h-full object-contain" />

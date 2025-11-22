@@ -22,16 +22,13 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
-              <img src="https://drive.google.com/uc?export=view&id=1kDpF38PwkEhI8M7ZxGSxf051Y-2vs1Yb" alt="Reazent Logo" className="w-10 h-10 object-contain" onError={e => {
+              <img src="https://res.cloudinary.com/dulut6cce/image/upload/v1763650633/ReazentLogoUpdatedSep2022_oxfdsf.png" alt="Reazent Logo" className="h-10 object-contain" onError={e => {
               e.currentTarget.style.display = 'none';
               e.currentTarget.nextElementSibling?.classList.remove('hidden');
             }} />
-              <div className="hidden w-10 h-10 bg-gradient-to-br from-orange-500 to-purple-600 rounded-lg flex items-center justify-center">
+              <div className="hidden w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">R</span>
               </div>
-              <span className="text-xl md:text-2xl font-bold text-purple-950">
-                Reazent
-              </span>
             </Link>
           </div>
 

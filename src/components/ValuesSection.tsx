@@ -18,7 +18,7 @@ export function ValuesSection() {
     title: 'Innovation',
     description: 'We continuously research and develop cutting-edge agricultural technologies.'
   }];
-  return <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+  return <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-purple-950 mb-4">
@@ -33,7 +33,7 @@ export function ValuesSection() {
           {values.map((value, index) => {
           const Icon = value.icon;
           return <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-purple-950 mb-2">

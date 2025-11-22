@@ -7,7 +7,7 @@ export function StatsSection() {
     value: '500+',
     label: 'Hectares Treated'
   }];
-  return <section className="bg-gradient-to-r from-purple-900 to-purple-950 py-20">
+  return <section className="bg-gradient-to-r from-orange-800 to-orange-900 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {stats.map((stat, index) => <div key={index} className="text-center">

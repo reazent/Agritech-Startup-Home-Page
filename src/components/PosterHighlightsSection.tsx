@@ -7,7 +7,7 @@ export function PosterHighlightsSection() {
     usMap: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop',
     farmField: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop'
   };
-  return <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+  return <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Section 1: New Generation Biological with Soybeans - PRODIGY */}
         <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl">
@@ -20,7 +20,7 @@ export function PosterHighlightsSection() {
             <div className="relative h-96 md:h-auto">
               <img src={images.soybeans} alt="Soybeans" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-gradient-to-br from-amber-100 via-amber-50 to-white p-12 flex flex-col justify-center items-center text-center">
+            <div className="bg-gradient-to-br from-orange-100 via-orange-50 to-white p-12 flex flex-col justify-center items-center text-center">
               <div className="mb-8">
                 <h2 className="text-5xl font-bold text-orange-500 mb-3">
                   Prodigy

@@ -201,7 +201,7 @@ export function ProductDetailPage() {
       {/* Hero Section with Product Image */}
       <section className="relative h-[400px] overflow-hidden">
         <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-purple-950/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-800/80 to-orange-900/80"></div>
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <Link to="/products" className="inline-flex items-center gap-2 text-white mb-6 hover:text-orange-300 transition-colors">
@@ -220,7 +220,7 @@ export function ProductDetailPage() {
       </section>
 
       {/* Product Details */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Main Content */}
