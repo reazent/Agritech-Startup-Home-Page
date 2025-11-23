@@ -1,15 +1,9 @@
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
+import { FileText, Download } from 'lucide-react';
 export function PosterHighlightsSection() {
-  // Image URLs - Replace these with your own images
-  const images = {
-    soybeans: 'https://images.unsplash.com/photo-1595855759920-86582396756a?w=800&h=600&fit=crop',
-    usMap: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop',
-    farmField: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop'
-  };
   return <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        {/* Section 1: New Generation Biological with Soybeans - PRODIGY */}
+        {/* Section 1: New Generation Biological - PRODIGY */}
         <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl">
           <div className="absolute top-6 left-1/2 -translate-x-1/2 z-10">
             <div className="bg-purple-600 text-white px-6 py-3 rounded-full text-base font-semibold shadow-lg">
@@ -17,9 +11,12 @@ export function PosterHighlightsSection() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-0">
-            <div className="relative h-96 md:h-auto">
-              <img src={images.soybeans} alt="Soybeans" className="w-full h-full object-cover" />
+            {/* Product Image */}
+            <div className="relative h-96 md:h-auto bg-white flex items-center justify-center p-8">
+              <img src="https://res.cloudinary.com/dulut6cce/image/upload/v1763850835/prodigy_uwi3pp.png" alt="Prodigy Product" className="w-full h-full object-contain" />
             </div>
+
+            {/* Product Info */}
             <div className="bg-gradient-to-br from-orange-100 via-orange-50 to-white p-12 flex flex-col justify-center items-center text-center">
               <div className="mb-8">
                 <h2 className="text-5xl font-bold text-orange-500 mb-3">
@@ -29,56 +26,61 @@ export function PosterHighlightsSection() {
                   Seed Treatment Yield Enhancer for Soybean
                 </p>
               </div>
-              <h3 className="text-2xl font-bold text-purple-950 leading-tight">
+              <h3 className="text-2xl font-bold text-purple-950 leading-tight mb-8">
                 Patented, Non-GMO
                 <br />
                 Biologicals For Increasing
                 <br />
                 Crop Yield
               </h3>
+
+              {/* OMRI Logo */}
+              <a href="https://res.cloudinary.com/dulut6cce/image/upload/v1763849290/OMRI_Certificate_2026.03.01_gnea4m.jpg" target="_blank" rel="noopener noreferrer" className="mb-6 hover:opacity-80 transition-opacity">
+                <img src="https://res.cloudinary.com/dulut6cce/image/upload/v1763844547/OMRI-listed-prod-avail-english-rgb_cbcvaq.jpg" alt="OMRI Listed" className="h-16 object-contain" />
+              </a>
+
+              {/* Document Links */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="#" className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors" onClick={e => {
+                e.preventDefault();
+                alert('Product Label PDF will be available soon');
+              }}>
+                  <FileText className="w-5 h-5" />
+                  Product Label
+                </a>
+                <a href="#" className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors" onClick={e => {
+                e.preventDefault();
+                alert('SDS PDF will be available soon');
+              }}>
+                  <Download className="w-5 h-5" />
+                  SDS
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Section 2: US Map - Early Commercialization */}
-        <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl p-12">
+        <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl p-8 md:p-12">
           <div className="absolute top-6 left-1/2 -translate-x-1/2 z-10">
             <div className="bg-purple-600 text-white px-6 py-3 rounded-full text-base font-semibold shadow-lg">
               Early commercialization in the US
             </div>
           </div>
-          <div className="pt-8 grid md:grid-cols-2 gap-8 items-center">
-            <div className="flex items-center justify-center bg-gray-50 rounded-xl p-8">
-              <img src={images.usMap} alt="US Map showing Prodigy availability" className="w-full max-w-2xl object-contain" />
+          <div className="pt-16">
+            {/* US Map - Full Width for Better Visibility */}
+            <div className="flex items-center justify-center mb-8">
+              <img src="https://res.cloudinary.com/dulut6cce/image/upload/v1763852226/prodigy_approval_mu5bwt.png" alt="US Map showing Prodigy availability" className="w-full max-w-4xl object-contain" />
             </div>
-            <div className="text-center md:text-left space-y-6">
-              <div>
-                <h3 className="text-3xl font-bold text-purple-950 mb-3">
-                  Prodigy Availability
-                </h3>
-                <p className="text-xl text-purple-900 mb-6">
-                  Now available across key soybean-growing states
-                </p>
-                <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-                  <div className="w-6 h-6 bg-green-500 rounded"></div>
-                  <span className="text-lg font-semibold text-purple-900">
-                    Registered/Approved States
-                  </span>
-                </div>
-                <p className="text-lg text-purple-900 leading-relaxed">
-                  North Dakota, South Dakota, Nebraska, Kansas, Missouri, Iowa,
-                  Minnesota, Illinois, Indiana, Ohio, Kentucky, Tennessee,
-                  Arkansas, Mississippi
-                </p>
-              </div>
-              <div className="flex justify-center md:justify-start">
-                <div className="inline-flex items-center gap-3 bg-green-100 border-2 border-green-600 px-6 py-3 rounded-xl">
-                  <CheckCircle className="w-6 h-6 text-green-600" />
-                  <span className="text-green-800 font-bold text-lg">
-                    OMRI LISTED
-                  </span>
-                </div>
-              </div>
+
+            {/* Availability Info - Centered Below Map */}
+            <div className="text-center max-w-3xl mx-auto">
+              <h3 className="text-3xl font-bold text-purple-950 mb-3">
+                Prodigy Availability
+              </h3>
+              <p className="text-xl text-purple-900">
+                Now available across key soybean-growing states
+              </p>
             </div>
           </div>
         </div>
@@ -92,7 +94,7 @@ export function PosterHighlightsSection() {
           </div>
           <div className="grid md:grid-cols-2 gap-0">
             <div className="relative h-96 md:h-auto order-2 md:order-1">
-              <img src={images.farmField} alt="Farm field with crops" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop" alt="Farm field with crops" className="w-full h-full object-cover" />
             </div>
             <div className="p-12 flex flex-col justify-center order-1 md:order-2">
               <h3 className="text-3xl font-bold text-purple-950 mb-8 text-center md:text-left">

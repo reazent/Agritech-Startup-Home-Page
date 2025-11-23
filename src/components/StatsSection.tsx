@@ -5,7 +5,7 @@ export function StatsSection() {
     label: 'Return On Investment'
   }, {
     value: '500+',
-    label: 'Hectares Treated'
+    label: 'Acres Treated'
   }];
   return <section className="bg-gradient-to-r from-orange-800 to-orange-900 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -9,17 +9,18 @@ export function StorySection() {
             </h2>
             <div className="space-y-4 text-purple-900">
               <p className="text-lg">
-                Founded in 2018, Reazent emerged from a simple question: How can
+                Reazent emerged from a simple question: How can
                 we help farmers grow more while protecting the planet?
               </p>
               <p>
-                Our team of agronomists and biochemists spent years researching
-                sustainable alternatives to traditional agricultural inputs.
-                What started in a small lab in Halifax has grown into a movement
-                transforming farming practices across North America.
+                Reazent exemplifies the successful translation of a research 
+                breakthrough into a commercial product. The core technology, 
+                originating from Joseph Kloepper's lab, has been further developed 
+                through years of research and development.
               </p>
+              
               <p>
-                Today, we partner with over 2,000 farmers who share our vision
+                Today, we partner with a network of farmers who share our vision
                 of productive, sustainable agriculture. Every product we develop
                 is rigorously tested in real field conditions, ensuring it
                 delivers measurable results.
@@ -27,7 +28,7 @@ export function StorySection() {
             </div>
           </div>
           <div className="relative">
-            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=600&fit=crop" alt="Research team in laboratory" className="rounded-2xl shadow-xl w-full" />
+            <img src="https://res.cloudinary.com/dulut6cce/image/upload/v1763855702/soy_field_monnho.jpg" alt="Soybean field" className="rounded-2xl shadow-xl w-full object-cover h-full" />
           </div>
         </div>
       </div>

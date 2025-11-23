@@ -6,7 +6,7 @@ export function CTASection() {
           Ready to Increase Your Crop Yield Sustainably?
         </h2>
         <p className="text-xl text-white opacity-90">
-          Join thousands of farmers who are already seeing better results with
+          Join our network of farmers who are already seeing better results with
           our sustainable agricultural inputs.
         </p>
       </div>

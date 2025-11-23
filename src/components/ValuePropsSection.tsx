@@ -9,7 +9,7 @@ export function ValuePropsSection() {
   }, {
     icon: TrendingUp,
     title: 'Proven Yield Increase',
-    description: 'Field-tested formulations that consistently deliver 25-40% higher yields across multiple crop types.',
+    description: 'Field-tested formulations that consistently deliver 200-400% ROI across multiple crop types.',
     color: 'purple'
   }, {
     icon: DollarSign,
