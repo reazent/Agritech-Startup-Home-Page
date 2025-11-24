@@ -24,8 +24,8 @@ export function ProductsPage() {
     type: 'Biostimulant',
     form: 'Liquid',
     application: 'Nutrient',
-    availability: '2026',
-    stage: 'field-testing' as const,
+    availability: '2025',
+    stage: 'commercial' as const,
     image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1764002025/arugula_f3bvwn.jpg',
     slug: 'migrow-x'
   }, {
@@ -39,6 +39,28 @@ export function ProductsPage() {
     stage: 'field-testing' as const,
     image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1764004007/wheat_plant_isbewr.jpg',
     slug: 'neo'
+  }, {
+    name: 'Prodigy Plus',
+    description: 'Prodigy with Rise - combined formulation for enhanced results',
+    crop: 'Soybean',
+    type: 'Biostimulant',
+    form: 'Combination',
+    application: 'Seed treatment',
+    availability: '2026',
+    stage: 'field-testing' as const,
+    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
+    slug: 'prodigy-plus'
+  }, {
+    name: 'Rise',
+    description: 'Rhizobia, bradyrhizobium Japonicum for nitrogen fixation',
+    crop: 'Soybean',
+    type: 'Biostimulant',
+    form: 'Liquid',
+    application: 'Seed treatment',
+    availability: '2026',
+    stage: 'field-testing' as const,
+    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
+    slug: 'rise'
   }, {
     name: 'Ignite',
     description: 'A natural compound for enhanced crop performance',
@@ -61,28 +83,6 @@ export function ProductsPage() {
     stage: 'field-testing' as const,
     image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
     slug: 'spark'
-  }, {
-    name: 'Rise',
-    description: 'Rhizobia, bradyrhizobium Japonicum for nitrogen fixation',
-    crop: 'Soybean',
-    type: 'Biostimulant',
-    form: 'Liquid',
-    application: 'Seed treatment',
-    availability: '2026',
-    stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
-    slug: 'rise'
-  }, {
-    name: 'Prodigy Plus',
-    description: 'Prodigy with Rise - combined formulation for enhanced results',
-    crop: 'Soybean',
-    type: 'Biostimulant',
-    form: 'Combination',
-    application: 'Seed treatment',
-    availability: '2026',
-    stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
-    slug: 'prodigy-plus'
   }, {
     name: 'Zenith',
     description: 'A formulation of microbe (apr1), a natural compound, plant biomass, and inorganic mineral',
