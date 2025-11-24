@@ -15,8 +15,30 @@ export function ProductsPage() {
     application: 'Seed treatment',
     availability: '2024',
     stage: 'commercial' as const,
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
+    image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1764003477/soy_plants_zyf6ph.jpg',
     slug: 'prodigy'
+  }, {
+    name: 'Migrow X',
+    description: 'A proprietary formulation of microbes (apr4), and a natural compound',
+    crop: 'Vegetables',
+    type: 'Biostimulant',
+    form: 'Liquid',
+    application: 'Nutrient',
+    availability: '2026',
+    stage: 'field-testing' as const,
+    image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1764002025/arugula_f3bvwn.jpg',
+    slug: 'migrow-x'
+  }, {
+    name: 'Neo',
+    description: 'A proprietary formulation of microbes (apr1), and a natural compound',
+    crop: 'Wheat',
+    type: 'Crop protection',
+    form: 'Liquid',
+    application: 'Foliar biocontrol',
+    availability: '2026',
+    stage: 'field-testing' as const,
+    image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1764004007/wheat_plant_isbewr.jpg',
+    slug: 'neo'
   }, {
     name: 'Ignite',
     description: 'A natural compound for enhanced crop performance',
@@ -28,28 +50,6 @@ export function ProductsPage() {
     stage: 'field-testing' as const,
     image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
     slug: 'ignite'
-  }, {
-    name: 'Migrow X',
-    description: 'A proprietary formulation of microbes (apr4), and a natural compound',
-    crop: 'Vegetables',
-    type: 'Biostimulant',
-    form: 'Liquid',
-    application: 'Nutrient',
-    availability: '2026',
-    stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&h=400&fit=crop',
-    slug: 'migrow-x'
-  }, {
-    name: 'Neo',
-    description: 'A proprietary formulation of microbes (apr1), and a natural compound',
-    crop: 'Wheat',
-    type: 'Crop protection',
-    form: 'Liquid',
-    application: 'Foliar biocontrol',
-    availability: '2026',
-    stage: 'field-testing' as const,
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
-    slug: 'neo'
   }, {
     name: 'Spark',
     description: 'A proprietary formulation of plant biomass',
@@ -84,17 +84,6 @@ export function ProductsPage() {
     image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop',
     slug: 'prodigy-plus'
   }, {
-    name: 'Thrive',
-    description: 'A proprietary formulation of microbes, a natural compound, plant biomass, and inorganic mineral',
-    crop: 'Any',
-    type: 'Carbon capture & sequestration',
-    form: 'Powder',
-    application: 'Soil amendment',
-    availability: '2026',
-    stage: 'development' as const,
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
-    slug: 'thrive'
-  }, {
     name: 'Zenith',
     description: 'A formulation of microbe (apr1), a natural compound, plant biomass, and inorganic mineral',
     crop: 'Any',
@@ -105,17 +94,6 @@ export function ProductsPage() {
     stage: 'development' as const,
     image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
     slug: 'zenith'
-  }, {
-    name: 'Apex',
-    description: 'A proprietary formulation for nitrogen fixation in corn',
-    crop: 'Any',
-    type: 'Biofertilizer',
-    form: 'Liquid',
-    application: 'Soil amendment',
-    availability: '2027',
-    stage: 'research' as const,
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
-    slug: 'apex'
   }];
   return <div className="w-full min-h-screen bg-white">
       <Header />
