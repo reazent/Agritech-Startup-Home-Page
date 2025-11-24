@@ -15,7 +15,7 @@ export function ProductDetailPage() {
       name: 'Prodigy',
       tagline: 'Seed Treatment Yield Enhancer for Soybean',
       description: 'A proprietary formulation of microbes (apr1), a natural compound, and plant biomass designed to maximize soybean yields through enhanced seed treatment.',
-      image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&h=600&fit=crop',
+      image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1764003477/soy_plants_zyf6ph.jpg',
       crop: 'Soybean',
       type: 'Biostimulant',
       form: 'Powder',
@@ -45,22 +45,22 @@ export function ProductDetailPage() {
       name: 'Migrow X',
       tagline: 'Liquid Biostimulant for Vegetable Crops',
       description: 'A proprietary formulation of microbes (apr4) and natural compounds specifically designed for vegetable production systems.',
-      image: 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1200&h=600&fit=crop',
+      image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1764002025/arugula_f3bvwn.jpg',
       crop: 'Vegetables',
       type: 'Biostimulant',
       form: 'Liquid',
       application: 'Nutrient',
-      availability: '2026',
-      stage: 'field-testing',
+      availability: '2025',
+      stage: 'commercial',
       benefits: ['Optimized for vegetable production', 'Liquid formulation for easy application', 'Enhances plant nutrition', 'Supports healthy plant development', 'Compatible with fertigation systems'],
       applicationDetails: 'Apply through fertigation systems or as foliar spray. Recommended application rates vary by crop and growth stage.',
-      technicalSpecs: ['Active Ingredients: Proprietary microbe blend (apr4), natural compounds', 'Formulation: Liquid concentrate', 'Application Method: Fertigation or foliar', 'Currently in field testing phase', 'Expected commercial availability: 2026']
+      technicalSpecs: ['Active Ingredients: Proprietary microbe blend (apr4), natural compounds', 'Formulation: Liquid concentrate', 'Application Method: Fertigation or foliar', 'Now commercially available', 'Commercial availability: 2025']
     },
     neo: {
       name: 'Neo',
       tagline: 'Foliar Biocontrol for Wheat',
       description: 'A proprietary formulation of microbes (apr1) and natural compounds designed for crop protection in wheat production.',
-      image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&h=600&fit=crop',
+      image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1764004007/wheat_plant_isbewr.jpg',
       crop: 'Wheat',
       type: 'Crop protection',
       form: 'Liquid',
@@ -116,21 +116,6 @@ export function ProductDetailPage() {
       applicationDetails: 'Apply as seed treatment at planting. Pre-mixed formulation eliminates need for separate applications.',
       technicalSpecs: ['Active Ingredients: Prodigy + Rise formulations', 'Formulation: Combination package', 'Application Method: Seed treatment', 'Currently in field testing phase', 'Expected commercial availability: 2026']
     },
-    thrive: {
-      name: 'Thrive',
-      tagline: 'Carbon Capture & Sequestration',
-      description: 'A proprietary formulation of microbes, natural compounds, plant biomass, and inorganic minerals designed for carbon capture and soil health improvement.',
-      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&h=600&fit=crop',
-      crop: 'Any',
-      type: 'Carbon capture & sequestration',
-      form: 'Powder',
-      application: 'Soil amendment',
-      availability: '2026',
-      stage: 'development',
-      benefits: ['Enhances carbon sequestration in soil', 'Improves long-term soil health', 'Supports climate-smart agriculture', 'Universal crop compatibility', 'Contributes to sustainability goals'],
-      applicationDetails: 'Apply as soil amendment. Designed for long-term soil improvement and carbon sequestration programs.',
-      technicalSpecs: ['Active Ingredients: Microbes, natural compounds, plant biomass, minerals', 'Formulation: Powder', 'Application Method: Soil amendment', 'Currently in development phase', 'Expected commercial availability: 2026']
-    },
     zenith: {
       name: 'Zenith',
       tagline: 'Complete Soil Health Solution',
@@ -145,21 +130,6 @@ export function ProductDetailPage() {
       benefits: ['Comprehensive soil health improvement', 'Combines multiple beneficial components', 'Enhances soil biology and chemistry', 'Universal crop application', 'Long-term soil building'],
       applicationDetails: 'Apply as soil amendment for comprehensive soil health improvement. Suitable for all crop types.',
       technicalSpecs: ['Active Ingredients: Microbes (apr1), natural compounds, plant biomass, minerals', 'Formulation: Powder', 'Application Method: Soil amendment', 'Currently in development phase', 'Expected commercial availability: 2026']
-    },
-    apex: {
-      name: 'Apex',
-      tagline: 'Next-Generation Nitrogen Fixation',
-      description: 'A proprietary formulation designed to enable nitrogen fixation in crops beyond traditional legumes, starting with corn.',
-      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&h=600&fit=crop',
-      crop: 'Any',
-      type: 'Biofertilizer',
-      form: 'Liquid',
-      application: 'Soil amendment',
-      availability: '2027',
-      stage: 'research',
-      benefits: ['Revolutionary nitrogen fixation technology', 'Potential for non-legume crops', 'Reduces synthetic nitrogen requirements', 'Supports sustainable intensification', 'Next-generation agricultural innovation'],
-      applicationDetails: 'Application methods under development. Designed for broad-spectrum nitrogen fixation.',
-      technicalSpecs: ['Active Ingredients: Proprietary formulation (under development)', 'Formulation: Liquid', 'Application Method: To be determined', 'Currently in research phase', 'Expected commercial availability: 2027']
     }
   };
   const product = productsData[slug || ''];
