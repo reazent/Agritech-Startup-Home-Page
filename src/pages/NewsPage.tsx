@@ -1,8 +1,10 @@
 import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { Calendar, ArrowRight } from 'lucide-react';
 export function NewsPage() {
+  useDocumentTitle('News & Updates - Reazent');
   // Replace this URL with your own hero image
   const heroImage = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&h=800&fit=crop';
   const newsItems = [{

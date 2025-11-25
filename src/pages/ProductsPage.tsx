@@ -3,7 +3,9 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ProductCard } from '../components/ProductCard';
 import { CTASection } from '../components/CTASection';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 export function ProductsPage() {
+  useDocumentTitle('Our Products - Reazent');
   // Replace this URL with your own hero image
   const heroImage = 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&h=800&fit=crop';
   const products = [{

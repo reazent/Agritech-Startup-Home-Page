@@ -7,7 +7,9 @@ import { ValuePropsSection } from '../components/ValuePropsSection';
 import { HowItWorksSection } from '../components/HowItWorksSection';
 import { CTASection } from '../components/CTASection';
 import { Footer } from '../components/Footer';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 export function HomePage() {
+  useDocumentTitle('Reazent - Sustainable Agricultural Solutions');
   return <div className="w-full min-h-screen bg-white">
       <Header />
       <Hero />

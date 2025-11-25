@@ -6,7 +6,9 @@ import { ValuesSection } from '../components/ValuesSection';
 import { TeamSection } from '../components/TeamSection';
 import { StatsSection } from '../components/StatsSection';
 import { CTASection } from '../components/CTASection';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 export function AboutPage() {
+  useDocumentTitle('About Us - Reazent');
   // Replace this URL with your own hero image
   const heroImage = 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&h=800&fit=crop';
   return <div className="w-full min-h-screen bg-white">

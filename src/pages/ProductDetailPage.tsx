@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { ArrowLeft, CheckCircle, Sprout, Package, Droplet, Calendar } from 'lucide-react';
 export function ProductDetailPage() {
   const {
@@ -133,6 +134,8 @@ export function ProductDetailPage() {
     }
   };
   const product = productsData[slug || ''];
+  // Set dynamic page title
+  useDocumentTitle(product ? `${product.name} - Products - Reazent` : 'Product Not Found - Reazent');
   if (!product) {
     return <div className="w-full min-h-screen bg-white">
         <Header />

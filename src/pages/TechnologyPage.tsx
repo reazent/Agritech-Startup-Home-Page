@@ -2,8 +2,10 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { CTASection } from '../components/CTASection';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { Leaf, FlaskConical, Microscope, Users, Target, Lightbulb } from 'lucide-react';
 export function TechnologyPage() {
+  useDocumentTitle('Our Technology - Reazent');
   // Replace this URL with your own hero image
   const heroImage = 'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1600&h=800&fit=crop';
   const pillars = [{

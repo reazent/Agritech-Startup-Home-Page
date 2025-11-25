@@ -1,8 +1,10 @@
 import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { Mail, Briefcase, Users, Target, Heart, TrendingUp } from 'lucide-react';
 export function CareersPage() {
+  useDocumentTitle('Careers - Reazent');
   // Replace this URL with your own hero image
   const heroImage = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=800&fit=crop';
   const values = [{
