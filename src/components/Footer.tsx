@@ -1,15 +1,40 @@
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 export function Footer() {
+  const socialLinks = [{
+    name: 'LinkedIn',
+    icon: Linkedin,
+    url: 'https://www.linkedin.com/company/reazent'
+  }, {
+    name: 'Twitter',
+    icon: Twitter,
+    url: 'https://twitter.com/reazent'
+  }, {
+    name: 'Facebook',
+    icon: Facebook,
+    url: 'https://www.facebook.com/reazent'
+  }, {
+    name: 'YouTube',
+    icon: Youtube,
+    url: '#' // Placeholder link
+  }];
   return <footer className="bg-slate-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-white font-bold text-xl mb-4">Reazent</h3>
-            <p className="text-sm opacity-90">
+            <p className="text-sm opacity-90 mb-4">
               Sustainable agricultural inputs for the modern farmer.
             </p>
+            <div className="flex gap-3">
+              {socialLinks.map(social => {
+              const Icon = social.icon;
+              return <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors" aria-label={social.name}>
+                    <Icon className="w-4 h-4" />
+                  </a>;
+            })}
+            </div>
           </div>
 
           <div>
