@@ -5,14 +5,14 @@ export function TeamSection() {
     name: 'Sumit Verma',
     role: 'Co-Founder',
     image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1763581526/sumit%20verma%20photoshot.png',
-    linkedinUrl: 'https://www.linkedin.com/in/sumitverma',
+    linkedinUrl: 'https://www.linkedin.com/in/sumitv/',
     expertise: ['Chemical Technology', 'Business Development', 'Product Development'],
     bio: 'Expert in chemical technology with extensive experience in business and product development.'
   }, {
     name: 'David Warner',
     role: 'Co-Founder',
     image: 'https://res.cloudinary.com/dulut6cce/image/upload/v1763583138/dave_warner_headshot_z0swts.png',
-    linkedinUrl: 'https://www.linkedin.com/in/davidwarner',
+    linkedinUrl: 'https://www.linkedin.com/in/david-warner-agbio/',
     expertise: ['Ag Biologicals', 'Go to Market', 'Commercialization'],
     bio: 'Agricultural biologicals specialist with proven track record in commercialization and market strategy.'
   }];
